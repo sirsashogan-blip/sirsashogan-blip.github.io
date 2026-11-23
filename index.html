@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aio — Voice your opinion, and make sure it's heard</title>
+  <meta name="description" content="Aio is where people turn shared problems at school, college or work into organized, peaceful protests: share it, gather members, vote a leader, plan it safely.">
+  <link rel="icon" type="image/png" href="assets/aio-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Aio home">
+        <img src="assets/aio-logo.png" alt="" width="40" height="40">
+        <span>Aio</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#why">Why Aio</a>
+        <a href="#how">How it works</a>
+        <a href="#story">A protest's story</a>
+        <a href="#faq">FAQ</a>
+        <a href="#feed">Feed</a>
+        <a href="#drafts" data-open="drafts">Drafts <span class="count-pill" data-drafts-count>0</span></a>
+      </nav>
+      <button class="btn btn--sm nav__acct" type="button" data-open="auth" data-mode="login" data-acct-label>Log in</button>
+      <a class="btn btn--ink nav__cta" href="#start">Start a protest</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--light reveal">aio · latin · <em>to speak, to affirm</em></p>
+          <h1 class="hero__title reveal" style="--d:.08s">
+            Voice your opinion,<br>and make sure it's
+            <span class="hl hl--orange"><span>heard.</span></span>
+          </h1>
+          <p class="hero__lead reveal" style="--d:.16s">
+            Aio turns the problems you face at <strong>school</strong>, <strong>college</strong> or
+            <strong>work</strong> into organized, peaceful protests. Share it, gather the people who
+            agree, vote a leader, and plan it safely.
+          </p>
+          <div class="hero__actions reveal" style="--d:.24s">
+            <a class="btn btn--orange btn--lg magnetic" href="#start">Start a protest</a>
+            <a class="btn btn--ghost btn--lg" href="#how">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero__stage" id="heroStage" aria-hidden="true">
+          <img class="sticker sticker--mic" data-depth="18" src="assets/mic.png" alt="" width="316" height="559">
+          <div class="browser browser--hero reveal reveal--pop" style="--d:.2s">
+            <div class="browser__bar">
+              <i></i><i></i><i></i>
+              <span class="browser__url">aio · protests / cafeteria-prices</span>
+            </div>
+            <div class="browser__body">
+              <div class="pcard">
+                <div class="pcard__tags"><span class="tag tag--orange">School</span><span class="tag">Open</span></div>
+                <h3 class="pcard__title">Cafeteria prices went up 40% this term</h3>
+                <p class="pcard__text">Lunch is now the most expensive part of the school day. We want a fair price review with students in the room.</p>
+                <div class="pcard__crowd">
+                  <div class="avatars">
+                    <span style="--c:#F89B44">M</span><span style="--c:#FFD93B">J</span><span style="--c:#8f9cff">R</span><span style="--c:#fff">A</span><span style="--c:#F89B44">K</span>
+                  </div>
+                  <p><strong class="count" data-to="248">0</strong> people face this too</p>
+                </div>
+                <div class="meter"><div class="meter__fill" style="--p:.82"></div></div>
+                <div class="pcard__foot">
+                  <span>Leader vote opens at 300</span>
+                  <span class="btn btn--sm btn--blue">I face this too</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="sticker sticker--logo" data-depth="-24" src="assets/aio-logo.png" alt="" width="120" height="120">
+          <div class="sticker sticker--burst" data-depth="30">
+            <img src="assets/burst.png" alt="" width="432" height="432">
+            <span>Louder!</span>
+          </div>
+          <img class="sticker sticker--exclaim" data-depth="-14" src="assets/exclaim.png" alt="" width="253" height="234">
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- WHY AIO -->
+    <section class="section why" id="why">
+      <div class="wrap center">
+        <p class="eyebrow reveal">Why Aio</p>
+        <h2 class="h2 reveal" style="--d:.06s">One voice is a complaint.<br>Many voices are a movement.</h2>
+      </div>
+      <div class="fan" id="fan">
+        <article class="fan__card fan__card--orange" style="--i:0">
+          <img src="assets/phone.png" alt="" class="fan__art" width="704" height="884">
+          <h3>Share it</h3>
+          <p>Post the problem you face at your school, college, or workplace, in your own words.</p>
+        </article>
+        <article class="fan__card fan__card--blue" style="--i:1">
+          <img src="assets/hands.png" alt="" class="fan__art fan__art--wide" width="728" height="581">
+          <h3>Gather</h3>
+          <p>Members of your community who face the same problem join in and add their voice.</p>
+        </article>
+        <article class="fan__card fan__card--yellow" style="--i:2">
+          <img src="assets/bulb.png" alt="" class="fan__art" width="111" height="154">
+          <h3>Plan it</h3>
+          <p>Vote a leader who plans the protest safely and easily, with everyone on the same page.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY IT EXISTS + DEMO -->
+    <section class="section exists" id="exists">
+      <div class="wrap exists__grid">
+        <div class="exists__copy">
+          <p class="eyebrow reveal">Why Aio exists</p>
+          <h2 class="h2 reveal" style="--d:.06s">Every complaint dies in the group chat.</h2>
+          <p class="reveal" style="--d:.12s">Everyone has a problem with something: the prices, the hours, the rules nobody explained. It gets
+            talked about in hallways and group chats, then forgotten.</p>
+          <p class="reveal" style="--d:.16s">Not because nobody cares. Because nobody knows how many others care, who should lead, or what
+            the plan is. So the moment passes.</p>
+          <p class="reveal" style="--d:.2s"><strong>Aio gives that moment a place to grow:</strong> a shared problem, a crowd that agrees, a
+            leader they chose, and a plan they can trust.</p>
+        </div>
+
+        <div class="demo reveal reveal--pop" style="--d:.1s">
+          <div class="demo__card" id="demo" aria-live="polite">
+            <div class="demo__head">
+              <span class="tag tag--orange">Workplace</span>
+              <span class="demo__step" id="demoStep">Step 1 of 2 · Gather</span>
+            </div>
+            <h3 class="demo__title">Night shift has no paid break</h3>
+
+            <div class="demo__panel is-active" id="demoGather">
+              <p class="demo__sub">Tap to add voices. At <strong>10</strong>, members can vote a leader.</p>
+              <div class="demo__crowd" id="demoCrowd"></div>
+              <div class="meter meter--lg"><div class="meter__fill" id="demoMeter" style="--p:0"></div></div>
+              <div class="demo__row">
+                <span><strong id="demoCount">0</strong> / 10 voices</span>
+                <button class="btn btn--blue magnetic" id="demoAgree" type="button">I face this too</button>
+              </div>
+            </div>
+
+            <div class="demo__panel" id="demoVote">
+              <p class="demo__sub">Enough voices. Who should lead this protest?</p>
+              <div class="demo__candidates" role="group" aria-label="Candidates">
+                <button type="button" class="cand" data-name="Maya"><span style="--c:#F89B44">M</span>Maya<small>Shift lead, 6 yrs</small></button>
+                <button type="button" class="cand" data-name="Omar"><span style="--c:#FFD93B">O</span>Omar<small>Union rep</small></button>
+                <button type="button" class="cand" data-name="Lena"><span style="--c:#8f9cff">L</span>Lena<small>Started this post</small></button>
+              </div>
+            </div>
+
+            <div class="demo__panel" id="demoDone">
+              <div class="demo__done">
+                <img src="assets/burst.png" alt="" width="96" height="96">
+                <p class="demo__done-title"><span id="demoLeader">Maya</span> leads the protest.</p>
+                <p class="demo__sub">Next: roles, resources, goals and a meeting point.</p>
+                <button class="btn btn--ghost-ink btn--sm" id="demoReset" type="button">Run it again</button>
+              </div>
+            </div>
+          </div>
+          <p class="demo__note">A scripted demo. Real protests start on Aio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how" id="how">
+      <div class="wrap">
+        <div class="how__intro">
+          <p class="eyebrow reveal">How it works</p>
+          <h2 class="h2 reveal" style="--d:.06s">From one post to a planned protest.</h2>
+        </div>
+        <div class="how__grid">
+          <ol class="steps" id="steps">
+            <li class="step is-active" data-step="0">
+              <span class="step__num" style="--c:var(--orange)">1</span>
+              <div><h3>Share the problem</h3><p>Describe what's wrong at your <strong>school</strong>, <strong>college</strong> or <strong>workplace</strong>. Clear, specific, and in your own words.</p></div>
+            </li>
+            <li class="step" data-step="1">
+              <span class="step__num" style="--c:var(--yellow)">2</span>
+              <div><h3>Gather your people</h3><p>Members of your community who <strong>agree</strong> and face the same problem join the protest.</p></div>
+            </li>
+            <li class="step" data-step="2">
+              <span class="step__num" style="--c:#8f9cff">3</span>
+              <div><h3>Vote a leader</h3><p>Members vote to appoint a <strong>leader</strong>. One person, chosen by everyone, keeps the plan together.</p></div>
+            </li>
+            <li class="step" data-step="3">
+              <span class="step__num" style="--c:var(--orange)">4</span>
+              <div><h3>Plan it, safely and easily</h3><p>The leader sets each protester's <strong>role</strong>, secures the <strong>resources</strong>, sets the <strong>goals</strong>, and picks the <strong>location</strong>.</p></div>
+            </li>
+            <li class="step" data-step="4">
+              <span class="step__num" style="--c:var(--yellow)">5</span>
+              <div><h3>Meet up, and be heard</h3><p>Everyone knows where to be and what to do. Every protest is <strong>monitored</strong> to keep it peaceful.</p></div>
+            </li>
+          </ol>
+
+          <div class="how__sticky" aria-hidden="true">
+            <div class="browser browser--how">
+              <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url" id="howUrl">aio · new protest</span></div>
+              <div class="browser__body screens">
+                <!-- 0 share -->
+                <div class="screen is-active" data-screen="0">
+                  <p class="screen__label">New protest</p>
+                  <div class="field"><span>Where?</span><div class="seg"><b class="on">School</b><b>College</b><b>Workplace</b></div></div>
+                  <div class="field"><span>The problem</span><div class="input">Library closes at 5pm during exams<i class="caret"></i></div></div>
+                  <div class="field"><span>Why it matters</span><div class="input input--tall">Most of us study after classes and have nowhere quiet to go.</div></div>
+                  <span class="btn btn--blue btn--sm">Post problem</span>
+                </div>
+                <!-- 1 gather -->
+                <div class="screen" data-screen="1">
+                  <p class="screen__label">Members joining</p>
+                  <ul class="joinlist">
+                    <li><span style="--c:#F89B44">S</span>Sara joined<em>now</em></li>
+                    <li><span style="--c:#FFD93B">D</span>Dev joined<em>1m</em></li>
+                    <li><span style="--c:#8f9cff">N</span>Noor joined<em>3m</em></li>
+                    <li><span style="--c:#fff">T</span>Theo joined<em>4m</em></li>
+                  </ul>
+                  <div class="meter"><div class="meter__fill" style="--p:.7"></div></div>
+                  <p class="screen__small"><strong>212</strong> members agree</p>
+                </div>
+                <!-- 2 vote -->
+                <div class="screen" data-screen="2">
+                  <p class="screen__label">Leader vote</p>
+                  <div class="bars">
+                    <div class="bar"><span>Noor</span><div><i style="--p:.62"></i></div><b>62%</b></div>
+                    <div class="bar"><span>Dev</span><div><i style="--p:.27"></i></div><b>27%</b></div>
+                    <div class="bar"><span>Sara</span><div><i style="--p:.11"></i></div><b>11%</b></div>
+                  </div>
+                  <div class="winner"><span style="--c:#8f9cff">N</span>Noor is your leader</div>
+                </div>
+                <!-- 3 plan -->
+                <div class="screen" data-screen="3">
+                  <p class="screen__label">The plan</p>
+                  <div class="plan">
+                    <div class="plan__item" style="--c:var(--orange)"><b>Roles</b><span>Speakers 3 · Marshals 6 · Media 2</span></div>
+                    <div class="plan__item" style="--c:var(--yellow)"><b>Resources</b><span>Signs, water, first-aid kit</span></div>
+                    <div class="plan__item" style="--c:#8f9cff"><b>Goals</b><span>Library open till 10pm in exam weeks</span></div>
+                    <div class="plan__item" style="--c:#fff"><b>Location</b><span>Main quad · Thu 1:00pm</span></div>
+                  </div>
+                </div>
+                <!-- 4 meet -->
+                <div class="screen" data-screen="4">
+                  <p class="screen__label">Meet-up</p>
+                  <div class="map">
+                    <div class="map__pin"><img src="assets/aio-logo.png" alt="" width="44" height="44"></div>
+                    <span class="map__road map__road--a"></span><span class="map__road map__road--b"></span>
+                  </div>
+                  <div class="safe"><span class="safe__dot"></span>Monitored · Peaceful · 212 attending</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAN PILLARS (flip cards) -->
+    <section class="section pillars">
+      <div class="wrap center">
+        <p class="eyebrow reveal">The leader's toolkit</p>
+        <h2 class="h2 reveal" style="--d:.06s">Four things every protest needs.</h2>
+        <p class="sub reveal" style="--d:.1s">Tap a card to flip it.</p>
+      </div>
+      <div class="wrap pillars__grid">
+        <button class="flip reveal" style="--d:.0s" type="button" aria-pressed="false">
+          <span class="flip__inner">
+            <span class="flip__face flip__front" style="--bg:var(--orange)"><em>I</em><img src="assets/puzzle.png" alt="" width="277" height="414"><strong>Roles</strong></span>
+            <span class="flip__face flip__back"><em>I · Roles</em><span>Everyone gets a job: speakers, marshals, media, first aid. No one stands around wondering what to do.</span></span>
+          </span>
+        </button>
+        <button class="flip reveal" style="--d:.06s" type="button" aria-pressed="false">
+          <span class="flip__inner">
+            <span class="flip__face flip__front" style="--bg:var(--blue)"><em>II</em><img src="assets/piggy.png" alt="" width="567" height="624"><strong>Resources</strong></span>
+            <span class="flip__face flip__back"><em>II · Resources</em><span>Signs, water, permissions, speakers. The leader lists what's needed and members commit to bring it.</span></span>
+          </span>
+        </button>
+        <button class="flip reveal" style="--d:.12s" type="button" aria-pressed="false">
+          <span class="flip__inner">
+            <span class="flip__face flip__front" style="--bg:#8f9cff"><em>III</em><img src="assets/clipboard.png" alt="" width="450" height="583"><strong>Goals</strong></span>
+            <span class="flip__face flip__back"><em>III · Goals</em><span>What does change look like? Clear goals turn complaints into demands people can actually say yes to.</span></span>
+          </span>
+        </button>
+        <button class="flip reveal" style="--d:.18s" type="button" aria-pressed="false">
+          <span class="flip__inner">
+            <span class="flip__face flip__front" style="--bg:var(--yellow)"><em>IV</em><img src="assets/globe.png" alt="" width="532" height="657"><strong>Location</strong></span>
+            <span class="flip__face flip__back"><em>IV · Location</em><span>One place, one time, shared only with members. Everyone shows up together, nobody gets lost.</span></span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-label="Si non audis, magis clare aiomus. If you won't listen, we will say it louder.">
+      <div class="marquee__track" aria-hidden="true">
+        <span>Si non audis, magis clare aiomus</span><i></i><span>If you won't listen, we will say it louder</span><i></i>
+        <span>Si non audis, magis clare aiomus</span><i></i><span>If you won't listen, we will say it louder</span><i></i>
+        <span>Si non audis, magis clare aiomus</span><i></i><span>If you won't listen, we will say it louder</span><i></i>
+        <span>Si non audis, magis clare aiomus</span><i></i><span>If you won't listen, we will say it louder</span><i></i>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <section class="story" id="story">
+      <div class="story__pin">
+        <div class="wrap center story__head">
+          <p class="eyebrow">A protest's story</p>
+          <h2 class="h2">From one voice<br>to a crowd that's heard.</h2>
+        </div>
+        <div class="story__viewport">
+          <div class="story__track" id="storyTrack">
+            <div class="story__line"><span id="storyLine"></span></div>
+            <article class="tl"><span class="tl__dot" style="--c:var(--orange)"></span><h3>A problem is posted</h3><p>One student shares that the library closes too early during exams.</p></article>
+            <article class="tl"><span class="tl__dot" style="--c:var(--yellow)"></span><h3>50 people agree</h3><p>Classmates who face the same problem join in and add their voice.</p></article>
+            <article class="tl"><span class="tl__dot" style="--c:#8f9cff"></span><h3>The crowd grows</h3><p>Over 200 members. It's no longer one complaint, it's a shared demand.</p></article>
+            <article class="tl"><span class="tl__dot" style="--c:var(--orange)"></span><h3>A leader is chosen</h3><p>Members vote. The leader they appoint takes charge of the plan.</p></article>
+            <article class="tl"><span class="tl__dot" style="--c:var(--yellow)"></span><h3>The plan is set</h3><p>Roles assigned, resources secured, goals written, location shared.</p></article>
+            <article class="tl tl--hl"><span class="tl__dot" style="--c:var(--blue)"></span><h3>They meet up, peacefully</h3><p>Monitored from start to finish. Organized, safe, impossible to ignore.</p></article>
+            <article class="tl"><span class="tl__dot tl__dot--empty"></span><p class="tl__when">Next</p><h3>Your turn</h3><p>What's the problem you face? <a href="#start">Start a protest.</a></p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START / SIGN MAKER -->
+    <section class="section start" id="start">
+      <div class="wrap start__grid">
+        <div>
+          <p class="eyebrow eyebrow--ink reveal">Voice your opinion</p>
+          <h2 class="h2 reveal" style="--d:.06s">What do you want them to hear?</h2>
+          <p class="reveal" style="--d:.1s">Write your slogan, pick where it's happening, and make your sign. Every protest on Aio starts with one sentence.</p>
+
+          <form class="form reveal" id="startForm" style="--d:.14s" novalidate>
+            <div class="form__field">
+              <label for="slogan">Your slogan <span class="req" aria-hidden="true">*</span></label>
+              <input id="slogan" name="slogan" type="text" maxlength="48" required autocomplete="off" placeholder="e.g. Keep the library open" aria-describedby="sloganHelp sloganErr">
+              <p class="form__help" id="sloganHelp"><span id="sloganLeft">48</span> characters left</p>
+              <p class="form__err" id="sloganErr" role="alert"></p>
+            </div>
+            <fieldset class="form__field">
+              <legend>Where is it happening?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="where" value="School" checked><span>School</span></label>
+                <label class="chip"><input type="radio" name="where" value="College"><span>College</span></label>
+                <label class="chip"><input type="radio" name="where" value="Workplace"><span>Workplace</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="form__field">
+              <legend>Sign colour</legend>
+              <div class="swatches">
+                <label class="swatch" style="--c:#ffffff"><input type="radio" name="color" value="#ffffff" checked><span class="sr">White</span></label>
+                <label class="swatch" style="--c:#0A07C0"><input type="radio" name="color" value="#0A07C0"><span class="sr">Blue</span></label>
+                <label class="swatch" style="--c:#FFD93B"><input type="radio" name="color" value="#FFD93B"><span class="sr">Yellow</span></label>
+              </div>
+            </fieldset>
+            <button class="btn btn--ink btn--lg magnetic" type="submit" id="startBtn">Create my protest</button>
+            <p class="form__ok" id="formOk" role="status"></p>
+            <button class="drafts-link" type="button" data-open="drafts">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 4h11l5 5v11H4z M15 4v5h5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+              View my drafts <span class="count-pill" data-drafts-count>0</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="sign-stage" aria-hidden="true">
+          <img class="sticker sticker--q" src="assets/question.png" alt="" width="149" height="202">
+          <div class="sign" id="sign">
+            <div class="sign__board" id="signBoard">
+              <span class="sign__where" id="signWhere">School</span>
+              <p class="sign__text" id="signText">Make it louder</p>
+              <img class="sign__logo" src="assets/aio-logo.png" alt="" width="44" height="44">
+            </div>
+            <div class="sign__stick"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="wrap faq__wrap">
+        <div class="center">
+          <p class="eyebrow reveal">FAQ</p>
+          <h2 class="h2 reveal" style="--d:.06s">Questions, answered.</h2>
+        </div>
+        <div class="faq__list">
+          <details class="qa reveal"><summary>What is Aio?</summary><div class="qa__a"><p>Aio is a website where people form protests around problems they face at school, college, or work. You share the problem, gather members who agree, vote a leader, and plan the protest together.</p></div></details>
+          <details class="qa reveal"><summary>What does "Aio" mean?</summary><div class="qa__a"><p><em>Aio</em> is a Latin word that means to speak, and to affirm. In other words: <strong>I say.</strong></p></div></details>
+          <details class="qa reveal"><summary>Who can start a protest?</summary><div class="qa__a"><p>Anyone who faces a real problem in their school, college, or workplace. Members of that community who agree can then join it.</p></div></details>
+          <details class="qa reveal"><summary>How is the leader chosen?</summary><div class="qa__a"><p>Members of the protest vote to appoint a leader. The leader is chosen by the people in it, not by whoever posted first.</p></div></details>
+          <details class="qa reveal"><summary>What does the leader actually plan?</summary><div class="qa__a"><p>Four things: the <strong>roles</strong> of each protester, the <strong>resources</strong> needed, the <strong>goals</strong> to achieve, and the <strong>location</strong> where everyone meets up.</p></div></details>
+          <details class="qa reveal"><summary>Is it safe?</summary><div class="qa__a"><p>Every protest and event on Aio is strictly monitored. Aio is built for peaceful protests, planned safely and easily.</p></div></details>
+          <details class="qa reveal"><summary>What happens if someone breaks the rules?</summary><div class="qa__a"><p>Any protest that violates Aio's policy is removed automatically, and the violation is recorded on each person's profile. For every <strong>3 violations</strong>, the police are informed.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final">
+      <div class="wrap center">
+        <img class="final__logo reveal reveal--pop" src="assets/aio-logo.png" alt="Aio logo" width="120" height="120">
+        <h2 class="final__title reveal" style="--d:.06s">If you won't listen,<br>we will say it <span class="hl hl--orange"><span>louder.</span></span></h2>
+        <p class="final__latin reveal" style="--d:.12s">Si non audis, magis clare aiomus.</p>
+        <dl class="facts reveal" style="--d:.16s">
+          <div><dt>Where</dt><dd>School, college, work</dd></div>
+          <div><dt>Leader</dt><dd>Voted by members</dd></div>
+          <div><dt>Plan</dt><dd>Roles, resources, goals, location</dd></div>
+          <div><dt>Safety</dt><dd>Monitored, 3-strike rule</dd></div>
+        </dl>
+        <a class="btn btn--orange btn--lg magnetic reveal" style="--d:.2s" href="#start">Start a protest</a>
+      </div>
+    </section>
+
+    <!-- FEED -->
+    <section class="section feed" id="feed" aria-labelledby="feedTitle">
+      <div class="feed__wrap">
+        <div class="center">
+          <p class="eyebrow reveal">Live from Aio</p>
+          <h2 class="h2 reveal" id="feedTitle" style="--d:.06s">Feed</h2>
+          <p class="sub reveal" style="--d:.1s">Problems people are speaking up about right now. Join the ones you care about.</p>
+        </div>
+
+        <div class="feed__card">
+          <!-- composer -->
+          <form class="compose" id="composeForm" novalidate>
+            <span class="avatar" id="composeAvatar" aria-hidden="true">?</span>
+            <div class="compose__main">
+              <p class="compose__who" id="composeWho">Log in to post a problem</p>
+              <label class="sr" for="composeSlogan">Your slogan</label>
+              <input id="composeSlogan" class="compose__slogan" type="text" maxlength="48" placeholder="What's the problem?" autocomplete="off">
+              <div class="compose__more" id="composeMore" hidden>
+                <label class="sr" for="composeBody">Describe it</label>
+                <textarea id="composeBody" class="compose__body" maxlength="280" rows="3" placeholder="Say what's happening and who it affects."></textarea>
+                <div class="compose__bar">
+                  <div class="chips chips--sm" role="radiogroup" aria-label="Where is it happening?">
+                    <label class="chip"><input type="radio" name="cplace" value="School" checked><span>School</span></label>
+                    <label class="chip"><input type="radio" name="cplace" value="College"><span>College</span></label>
+                    <label class="chip"><input type="radio" name="cplace" value="Workplace"><span>Workplace</span></label>
+                  </div>
+                  <span class="compose__left" id="composeLeft" aria-live="polite">280</span>
+                  <button class="btn btn--ink btn--sm" type="submit" id="composeBtn">Post</button>
+                </div>
+              </div>
+              <p class="form__err" id="composeErr" role="alert"></p>
+            </div>
+          </form>
+
+          <ol class="posts" id="posts" aria-live="polite" aria-busy="true"></ol>
+          <p class="feed__state" id="feedState">Loading the feed…</p>
+          <div class="center"><button class="btn btn--sm" type="button" id="feedMore" hidden>Show more</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="brand" href="#top"><img src="assets/aio-logo.png" alt="" width="32" height="32"><span>Aio</span></a>
+      <p>From the Latin <em>aio</em>: I say, I affirm.</p>
+      <p>© 2026 Aio</p>
+    </div>
+  </footer>
+
+  <!-- LOG IN / SIGN UP -->
+  <dialog class="modal" id="authModal" aria-labelledby="authTitle" aria-describedby="authSub">
+    <div class="modal__card">
+      <button class="modal__x" type="button" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      </button>
+      <img class="modal__logo" src="assets/aio-logo.png" alt="" width="56" height="56">
+      <div class="auth__tabs" id="authTabs" role="tablist" aria-label="Account">
+        <button class="auth__tab" type="button" role="tab" data-mode="login" aria-selected="true">Log in</button>
+        <button class="auth__tab" type="button" role="tab" data-mode="signup" aria-selected="false" tabindex="-1">Sign up</button>
+      </div>
+      <h2 class="modal__title" id="authTitle">Welcome back.</h2>
+      <p class="modal__sub" id="authSub">Enter your email and we'll send you a 6-digit code.</p>
+
+      <form class="form auth__form" id="authEmailForm" novalidate>
+        <div class="form__field" id="authNameField" hidden>
+          <label for="authName">Your name <span class="req" aria-hidden="true">*</span></label>
+          <input id="authName" name="name" type="text" autocomplete="name" maxlength="40" placeholder="e.g. Sam">
+        </div>
+        <div class="form__field">
+          <label for="authEmail">Email <span class="req" aria-hidden="true">*</span></label>
+          <input id="authEmail" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@school.edu" aria-describedby="authEmailErr">
+        </div>
+        <div class="form__field">
+          <label for="authPass">Password <span class="req" aria-hidden="true">*</span></label>
+          <input id="authPass" name="password" type="password" autocomplete="current-password" minlength="8" required placeholder="At least 8 characters">
+        </div>
+        <div class="hp" aria-hidden="true"><label for="authHp">Company</label><input id="authHp" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+        <label class="check" id="authRulesField" hidden>
+          <input type="checkbox" id="authRules">
+          <span>I'll keep protests peaceful and follow Aio's rules (3 violations and the police are informed).</span>
+        </label>
+        <div id="authCaptcha" class="auth__captcha"></div>
+        <p class="form__err" id="authEmailErr" role="alert"></p>
+        <button class="btn btn--ink btn--lg" type="submit" id="authSend">Send my code</button>
+        <p class="auth__fine">Protected by a bot check.</p>
+      </form>
+
+      <form class="form auth__form" id="authCodeForm" novalidate hidden>
+        <p class="auth__sent">We sent a code to <strong id="authSentTo"></strong>. It expires in 1 hour.</p>
+        <div class="form__field">
+          <label for="authCode">6-digit code</label>
+          <input id="authCode" class="auth__code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="8" placeholder="123456" aria-describedby="authCodeErr">
+        </div>
+        <p class="form__err" id="authCodeErr" role="alert"></p>
+        <p class="form__ok" id="authResent" role="status"></p>
+        <button class="btn btn--ink btn--lg" type="submit" id="authVerify">Verify</button>
+        <div class="auth__row">
+          <button class="linkbtn" type="button" id="authBack">Use a different email</button>
+          <button class="linkbtn" type="button" id="authResend">Resend code</button>
+        </div>
+      </form>
+
+      <div class="auth__done" id="authDone" hidden>
+        <p id="authWho"></p>
+        <button class="btn btn--orange btn--lg" type="button" id="authToDrafts">Go to my drafts</button>
+        <button class="btn" type="button" id="authLogout">Log out</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- DRAFTS -->
+  <dialog class="drawer" id="draftsDrawer" aria-labelledby="draftsTitle">
+    <div class="drawer__inner">
+      <header class="drawer__head">
+        <div>
+          <p class="eyebrow eyebrow--ink">Drafts</p>
+          <h2 class="modal__title" id="draftsTitle">Your protests in progress.</h2>
+          <p class="drawer__where" id="draftsWhere" role="status"></p>
+        </div>
+        <button class="modal__x" type="button" data-close aria-label="Close drafts">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+      <div class="drawer__bar">
+        <button class="btn btn--sm btn--orange" type="button" id="draftsNew">+ New draft</button>
+        <button class="btn btn--sm" type="button" id="draftsLogin">Log in to sync</button>
+      </div>
+      <ul class="drafts" id="draftsList"></ul>
+      <div class="drafts__empty" id="draftsEmpty" hidden>
+        <img src="assets/bulb.png" alt="" width="90" height="120">
+        <p><strong>No drafts yet.</strong><br>Write a slogan in "Voice your opinion" and press Create. It'll wait for you here.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.min.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onAioTurnstile" async defer></script>
+  <script src="filter.js"></script>
+  <script src="account.js"></script>
+  <script src="main.js"></script>
+  <script src="feed.js"></script>
+</body>
+</html>
